@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A read on where AI fits in Bobi's stack, and where it doesn't. | BobiHealth</title>
+<meta name="description" content="Bobi runs on-device models, publishes medically reviewed guidance, and is pitching a privacy architecture to the DoD while three co-founders keep a consumer app alive in three countries." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="logo.png" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="BobiHealth">
+      <img src="logo.png" alt="BobiHealth" class="brand-logo" />
+    </a>
+    <div class="header-meta">
+      <span class="dot" aria-hidden="true"></span>
+      <span class="header-meta-text">Prepared for Dave, Mohit, and Ann-Christin</span>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">A note from Eduba, for BobiHealth</p>
+        <h1>A read on where AI actually fits in Bobi&rsquo;s stack, and where it doesn&rsquo;t.</h1>
+        <p class="lede">On-device models. Medically reviewed guidance. A privacy rail pitched at the DoD while three co-founders keep a consumer app alive in three countries. That is a lot of surface area for a pre-seed team. This page is a short read on where the budget should actually land.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">Thirty minutes with Matt</a>
+          <span class="cta-aside">Bring one workflow that eats Mohit&rsquo;s week.</span>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Heartbeat">
+        <div class="heart-stage">
+          <svg class="heart" viewBox="0 0 120 110" role="img" aria-label="Beating heart">
+            <path d="M60 98 C 18 70, 6 44, 22 24 C 34 10, 52 12, 60 28 C 68 12, 86 10, 98 24 C 114 44, 102 70, 60 98 Z" />
+          </svg>
+          <div class="pulse-ring" aria-hidden="true"></div>
+          <div class="pulse-ring pulse-ring-2" aria-hidden="true"></div>
+        </div>
+        <div class="hero-card-foot">
+          <span class="hero-card-label">Every heartbeat matters.</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="observed">
+    <div class="wrap">
+      <p class="section-kicker">What we read before writing this</p>
+      <ul class="sources">
+        <li><span class="src-name">San Antonio Report</span><span class="src-note">The federated architecture and the DoD pitch plan</span></li>
+        <li><span class="src-name">BusinessWire, May 2024</span><span class="src-note">Product launch across US, India, and the Philippines</span></li>
+        <li><span class="src-name">Healthcare Tech Outlook</span><span class="src-note">Top Pregnancy Health Tracking Tool 2025</span></li>
+        <li><span class="src-name">bobihealth.com/team</span><span class="src-note">Three co-founders, one medical director, five senior clinical advisors</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="thesis">
+    <div class="wrap thesis-grid">
+      <div class="thesis-left">
+        <p class="section-kicker">The thesis</p>
+        <h2>Three commercial paths. Ten people. One wins the next twelve months.</h2>
+      </div>
+      <div class="thesis-right">
+        <p>Press coverage in 2024 named three wedges out loud: a consumer subscription, licensing the privacy architecture, and a DoD data rail. The math of a pre-seed team says one of those carries the runway. The other two become ballast until the first one is closed.</p>
+        <p>That choice is the conversation worth having at the booth, ahead of the next model cycle and ahead of the regulatory lift.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="layers">
+    <div class="wrap">
+      <p class="section-kicker">How we read the stack</p>
+      <h2 class="section-heading">Sixty, thirty, ten.</h2>
+      <p class="section-sub">Eduba&rsquo;s view on AI stacks is simple. Sixty percent of most problems are plain code and a database. Thirty percent are rule logic. Ten percent are genuinely AI-shaped. Applied to Bobi:</p>
+
+      <div class="layers-grid">
+        <article class="layer">
+          <div class="layer-head">
+            <span class="layer-pct">60%</span>
+            <span class="layer-tag">Code and data</span>
+          </div>
+          <h3>Guideline ingest and content review.</h3>
+          <p>Pulling ACOG updates and CDC bulletins into a versioned content store, with clinician sign-off on changes, is mostly pipeline and review. A small model helps at the margin. The spine is rules and human judgment.</p>
+        </article>
+
+        <article class="layer">
+          <div class="layer-head">
+            <span class="layer-pct">30%</span>
+            <span class="layer-tag">Rule logic</span>
+          </div>
+          <h3>The alert engine.</h3>
+          <p>Preeclampsia, hemorrhage, and mental-health patterns are thresholds, cohorts, and escalation rules with an AI assist. Not an LLM problem. Running this layer as rules keeps the alert path auditable and liability-safe.</p>
+        </article>
+
+        <article class="layer">
+          <div class="layer-head">
+            <span class="layer-pct">10%</span>
+            <span class="layer-tag">Genuinely AI</span>
+          </div>
+          <h3>Federated learning on device.</h3>
+          <p>Aggregating gradient updates without raw data leaving the phone is the only place in the stack where AI is doing work nothing else can do. This is the architecture worth defending and worth licensing.</p>
+        </article>
+      </div>
+
+      <p class="layers-foot">Spending budget in those proportions is the difference between a six-month runway and an eighteen-month one.</p>
+    </div>
+  </section>
+
+  <section class="engagement">
+    <div class="wrap engagement-grid">
+      <div class="engagement-copy">
+        <p class="section-kicker">Engagement shape</p>
+        <h2>A scoped sprint, Feeld-shaped.</h2>
+        <p>Feeld, a product company with a CTO trying to operationalize AI, hired Eduba for a scoped sprint: a workshop, advisory calls, an Organizational Context Architecture, and a Strategic Operations Framework their team still runs against. Andrew Santus, their CTO, is the closest analog to Mohit and Dave inside Bobi.</p>
+        <p>For Bobi, the deliverable is that picture of the stack, plus a wedge recommendation across the three commercial paths, plus the regulatory posture plan that matches it. The output is something the team runs against, not a slide deck that dies in a shared drive.</p>
+      </div>
+
+      <aside class="engagement-card">
+        <p class="card-eyebrow">Scope sketch</p>
+        <ul class="card-list">
+          <li><span class="li-k">Week 1</span><span class="li-v">Orchestration read across alerts, content ops, and the federated layer</span></li>
+          <li><span class="li-k">Week 2</span><span class="li-v">Wedge recommendation: consumer, licensing, or DoD</span></li>
+          <li><span class="li-k">Week 3</span><span class="li-v">Regulatory posture plan matched to the chosen wedge</span></li>
+          <li><span class="li-k">Delivery</span><span class="li-v">Organizational Context Architecture plus Strategic Operations Framework</span></li>
+        </ul>
+        <p class="card-foot">Scoped engagement, fixed deliverables. No pricing on this page. Matt will walk the numbers on the call.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="paper">
+    <div class="wrap paper-grid">
+      <div class="paper-icon" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="44" height="44"><path d="M10 6h20l8 8v28H10z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M30 6v8h8" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 24h16M16 30h16M16 36h10" stroke="currentColor" stroke-width="1.6"/></svg>
+      </div>
+      <div class="paper-copy">
+        <p class="section-kicker">One paper worth your time before the call</p>
+        <h2>Ethics Engine.</h2>
+        <p>A psychometric assessment tool for evaluating ideological and moral patterns in LLMs. Maternal advice is a place where that kind of audit matters, and Ken Marriott, MD will recognize the framing.</p>
+        <p class="paper-links">
+          <a href="https://arxiv.org/abs/2510.11742" target="_blank" rel="noopener">arxiv.org/abs/2510.11742</a>
+          <span class="dotsep" aria-hidden="true">&middot;</span>
+          <a href="https://github.com/RinDig/AuditEngine" target="_blank" rel="noopener">github.com/RinDig/AuditEngine</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="partner">
+    <div class="wrap">
+      <p class="section-kicker">On the scaling question</p>
+      <p class="partner-line">Eduba partners with NLP Logix for work that sits below the orchestration layer: production pipelines and ML engineering at scale. NLP Logix has been in machine learning since 2011 and runs over 150 data scientists. If the sprint surfaces that layer as the next bottleneck, the handoff is warm.</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap cta-inner">
+      <div class="cta-copy">
+        <h2>Thirty minutes with Matt.</h2>
+        <p>Bring one workflow that eats Mohit&rsquo;s week. We&rsquo;ll do a live orchestration read on it, split the 60/30/10, and talk through the wedge question Dave raised in the San Antonio Report piece.</p>
+      </div>
+      <div class="cta-action">
+        <a class="btn btn-primary btn-large" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">Book the call</a>
+        <p class="cta-who">Matt Creamer, CRO, Eduba</p>
+        <p class="cta-link"><a href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">calendly.com/thecro-eduba/30min</a></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p class="footer-prep">Prepared by Eduba, <a href="https://eduba.io" target="_blank" rel="noopener">eduba.io</a></p>
+    <p class="footer-meta">For BobiHealth &middot; eMerge Americas, Miami &middot; Booth SS7</p>
+  </div>
+</footer>
+
+</body>
+</html>
